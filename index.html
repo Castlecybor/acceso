@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column; /* Cambiado a columna para permitir el footer */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -26,14 +27,27 @@
             font-size: 16px;
             cursor: pointer;
         }
+        footer {
+            margin-top: auto; /* Empuja el footer hacia abajo */
+            padding: 10px; /* Espaciado interno */
+            color: white; /* Color del texto */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+            font-size: 14px; /* Tamaño de la fuente */
+            text-align: center; /* Centra el texto */
+            border-top: 2px solid #fff; /* Línea superior blanca */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="tu-logo.png" alt="Logo" style="max-width:50%; height:auto;">
+        <img src="tu-logo.png" alt="Logo" style="max-width:100%; height:auto;">
         <h2>Bienvenido a nuestra red Wi-Fi</h2>
         <button onclick="authorizeAccess()">Conectar</button>
     </div>
+
+    <footer>
+        Realizado por: División de Tecnología Inces Yaracuy
+    </footer>
 
     <script>
         function authorizeAccess() {
