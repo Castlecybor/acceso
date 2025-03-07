@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Inces Yaracuy</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('tu-fondo.jpg'); /* Cambia esto por la ruta de tu imagen */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="tu-logo.png" alt="Logo" style="max-width:50%; height:auto;">
+        <h2>Bienvenido a nuestra red Wi-Fi</h2>
+        <button onclick="authorizeAccess()">Conectar</button>
+    </div>
+
+    <script>
+        function authorizeAccess() {
+            // Aquí debes agregar la lógica para autorizar al usuario
+            window.location.href = "http://www.ejemplo.com"; // Redirige a la página deseada
+        }
+    </script>
+</body>
+</html>
